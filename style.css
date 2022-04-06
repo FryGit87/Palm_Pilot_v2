@@ -30,6 +30,14 @@ textarea {
   border-radius: 15px;
 }
 
+#dateTime{
+  font-size: 30px;
+  border: 2px solid black;
+  padding: 5px;
+  background-color: rgb(203, 254, 237);
+}
+
+
 .row {
   white-space: pre-wrap;
   height: 80px;
