@@ -30,6 +30,24 @@ textarea {
   border-radius: 15px;
 }
 
+.btn, .appointment{
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+.btn{
+  align-content: center;
+  justify-content: center;
+  box-shadow: 2px 2px 0 black;
+  background-color: beige;
+  height: auto;
+  width: auto;
+}
+
+.row-hours {
+  display: flex;
+}
+
 #dateTime{
   font-size: 30px;
   border: 2px solid black;
@@ -44,10 +62,18 @@ textarea {
   border-top: 1px solid white;
 }
 
+.hour-individual{
+  align-content: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  padding-top: 10px ;
 }
 
 .past {
