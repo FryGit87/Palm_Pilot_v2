@@ -15,7 +15,7 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color:rgb(237, 241, 240);
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -27,11 +27,11 @@ textarea {
 
 .time-block {
   text-align: center;
-  border-radius: 15px;
+  /* border-radius: 15px; */
 }
 
 .btn, .appointment{
-  border-radius: 10px;
+  /* border-radius: 10px; */
   border: 1px solid;
 }
 
@@ -52,7 +52,9 @@ textarea {
   font-size: 30px;
   border: 2px solid black;
   padding: 5px;
-  background-color: rgb(203, 254, 237);
+  background-color: rgb(223, 239, 233);
+  width: auto;
+  height: auto;
 }
 
 
@@ -93,8 +95,8 @@ textarea {
 
 .saveBtn {
   border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  /* border-top-right-radius: 15px; */
+  /* border-bottom-right-radius: 15px; */
   background-color: #06aed5;
   color: white;
 }
