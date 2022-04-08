@@ -1,104 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-      <p class="time-block" id="dateTime"></p>
-    </header>
-    <div class="container">
-      <!-- <p class="time-block" id="dateTime"></p> -->
-      <!-- Timeblocks go here -->
-      <ul>
-        <li class="row-hours" data-time="0">
-            <div class="hour hour-individual-1 col-1">08:00</div>
-            <textarea name="" id="appointment-1" class="appointment col-10" placeholder="Input meeting details."></textarea>
-            <button id="save-btn-1" class="saveBtn col-1 btn">SAVE</button>
-        </li>
-        <li class="row-hours" data-time="0">
-          <div class="hour hour-individual-1 col-1">09:00</div>
-          <textarea name="" id="appointment-1" class="appointment col-10" placeholder="Input meeting details."></textarea>
-          <button id="save-btn-1" class="saveBtn col-1 btn">SAVE</button>
-        </li>
-        <li class="row-hours" data-time="0">
-          <div class="hour hour-individual-1 col-1">10:00</div>
-          <textarea name="" id="appointment-1" class="appointment col-10" placeholder="Input meeting details."></textarea>
-          <button id="save-btn-1" class="saveBtn col-1 btn">SAVE</button>
-        </li>
-        <li class="row-hours" data-time="0">
-          <div class="hour hour-individual-1 col-1">11:00</div>
-          <textarea name="" id="appointment-1" class="appointment col-10" placeholder="Input meeting details."></textarea>
-          <button id="save-btn-1" class="saveBtn col-1 btn">SAVE</button>
-        </li>
-        <li class="row-hours" data-time="0">
-          <div class="hour hour-individual-1 col-1">12:00</div>
-          <textarea name="" id="appointment-1" class="appointment col-10" placeholder="Input meeting details."></textarea>
-          <button id="save-btn-1" class="saveBtn col-1 btn">SAVE</button>
-        </li>
-        <li class="row-hours" data-time="0">
-          <div class="hour hour-individual-1 col-1">13:00</div>
-          <textarea name="" id="appointment-1" class="appointment col-10" placeholder="Input meeting details."></textarea>
-          <button id="save-btn-1" class="saveBtn col-1 btn">SAVE</button>
-        </li>
-        <li class="row-hours" data-time="0">
-          <div class="hour hour-individual-1 col-1">14:00</div>
-          <textarea name="" id="appointment-1" class="appointment col-10" placeholder="Input meeting details."></textarea>
-          <button id="save-btn-1" class="saveBtn col-1 btn">SAVE</button>
-        </li>
-        <li class="row-hours" data-time="0">
-          <div class="hour hour-individual-1 col-1">15:00</div>
-          <textarea name="" id="appointment-1" class="appointment col-10" placeholder="Input meeting details."></textarea>
-          <button id="save-btn-1" class="saveBtn col-1 btn">SAVE</button>
-        </li>
-        <li class="row-hours" data-time="0">
-          <div class="hour hour-individual-1 col-1">16:00</div>
-          <textarea name="" id="appointment-1" class="appointment col-10" placeholder="Input meeting details."></textarea>
-          <button id="save-btn-1" class="saveBtn col-1 btn">SAVE</button>
-        </li>
-        <li class="row-hours" data-time="0">
-          <div class="hour hour-individual-1 col-1">17:00</div>
-          <textarea name="" id="appointment-1" class="appointment col-10" placeholder="Input meeting details."></textarea>
-          <button id="save-btn-1" class="saveBtn col-1 btn">SAVE</button>
-        </li>
-        <li class="row-hours" data-time="0">
-          <div class="hour hour-individual-1 col-1">18:00</div>
-          <textarea name="" id="appointment-1" class="appointment col-10" placeholder="Input meeting details."></textarea>
-          <button id="save-btn-1" class="saveBtn col-1 btn">SAVE</button>
-        </li>
-        <li class="row-hours" data-time="0">
-          <div class="hour hour-individual-1 col-1">19:00</div>
-          <textarea name="" id="appointment-1" class="appointment col-10" placeholder="Input meeting details."></textarea>
-          <button id="save-btn-1" class="saveBtn col-1 btn">SAVE</button>
-        </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
 
-      </ul>
-    </div>
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+    <p class="time-block" id="dateTime"></p>
+  </header>
+  <div class="container">
+    <!-- <p class="time-block" id="dateTime"></p> -->
+    <!-- Timeblocks go here -->
+    <ul>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="/app.js"></script>
-  </body>
+
+
+
+
+
+
+
+
+
+      <li class="row-hours" data-time="0">
+        <div class="hour hour-individual-1 col-1">09:00</div>
+        <textarea name="" id="09" class="appointment col-10" placeholder="Input meeting details."></textarea>
+        <button id="save-btn" class="saveBtn col-1 btn">SAVE</button>
+      </li>
+      <li class="row-hours" data-time="0">
+        <div class="hour hour-individual-1 col-1">10:00</div>
+        <textarea name="" id="10" class="appointment col-10" placeholder="Input meeting details."></textarea>
+        <button id="save-btn" class="saveBtn col-1 btn">SAVE</button>
+      </li>
+      <li class="row-hours" data-time="0">
+        <div class="hour hour-individual-1 col-1">11:00</div>
+        <textarea name="" id="11" class="appointment col-10" placeholder="Input meeting details."></textarea>
+        <button id="save-btn" class="saveBtn col-1 btn">SAVE</button>
+      </li>
+      <li class="row-hours" data-time="0">
+        <div class="hour hour-individual-1 col-1">12:00</div>
+        <textarea name="" id="12" class="appointment col-10" placeholder="Input meeting details."></textarea>
+        <button id="save-btn" class="saveBtn col-1 btn">SAVE</button>
+      </li>
+      <li class="row-hours" data-time="0">
+        <div class="hour hour-individual-1 col-1">13:00</div>
+        <textarea name="" id="13" class="appointment col-10" placeholder="Input meeting details."></textarea>
+        <button id="save-btn" class="saveBtn col-1 btn">SAVE</button>
+      </li>
+      <li class="row-hours" data-time="0">
+        <div class="hour hour-individual-1 col-1">14:00</div>
+        <textarea name="" id="14" class="appointment col-10" placeholder="Input meeting details."></textarea>
+        <button id="save-btn" class="saveBtn col-1 btn">SAVE</button>
+      </li>
+      <li class="row-hours" data-time="0">
+        <div class="hour hour-individual-1 col-1">15:00</div>
+        <textarea name="" id="15" class="appointment col-10" placeholder="Input meeting details."></textarea>
+        <button id="save-btn" class="saveBtn col-1 btn">SAVE</button>
+      </li>
+      <li class="row-hours" data-time="0">
+        <div class="hour hour-individual-1 col-1">16:00</div>
+        <textarea name="" id="16" class="appointment col-10" placeholder="Input meeting details."></textarea>
+        <button id="save-btn" class="saveBtn col-1 btn">SAVE</button>
+      </li>
+      <li class="row-hours" data-time="0">
+        <div class="hour hour-individual-1 col-1">17:00</div>
+        <textarea name="" id="17" class="appointment col-10" placeholder="Input meeting details."></textarea>
+        <button id="save-btn" class="saveBtn col-1 btn">SAVE</button>
+      </li>
+      <li class="row-hours" data-time="0">
+        <div class="hour hour-individual-1 col-1">18:00</div>
+        <textarea name="" id="18" class="appointment col-10" placeholder="Input meeting details."></textarea>
+        <button id="save-btn" class="saveBtn col-1 btn">SAVE</button>
+      </li>
+
+
+    </ul>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+
 </html>
