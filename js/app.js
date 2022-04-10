@@ -21,6 +21,7 @@ function currentHour() {
 }
 setInterval(currentHour(), 1000 * 60 * 1);
 
+//Retrieving items from local storage
 var setAppt1 = localStorage.getItem("k1");
 $(".appointment1").val(setAppt1);
 
@@ -51,6 +52,7 @@ $(".appointment9").val(setAppt9);
 var setAppt10 = localStorage.getItem("k10");
 $(".appointment10").val(setAppt10);
 
+//Setting items from local storage, on click
 $("button").click(function () {
   function booking(row, key) {
     var userInput = $(row).val();
